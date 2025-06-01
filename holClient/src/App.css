@@ -1,0 +1,73 @@
+.page {
+  position: absolute;
+  background-color: dimgray;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  display:grid;
+  background-color:   rgb(167, 125, 245);
+  justify-content: center;
+  align-items: center;
+  margin-top: 250px;
+  padding: 20px;
+  border-radius: 20px;
+  width: 40%; 
+}
+
+.title {
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  font-size: 64px;
+
+}
+
+.modal-overlay {
+  position:absolute;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.616);
+}
+.modal-content {
+  position: relative;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  
+}
+
+.signInForm {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginForm {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-grid {
+  display: inline-flex;
+  
+}
+.cards {
+  justify-items: center;
+}
+.hol-buttons {
+  display: flex;
+  justify-content: center;
+
+}
