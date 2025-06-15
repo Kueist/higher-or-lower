@@ -10,10 +10,10 @@ function App() {
 
     //sets user token on refresh
     useEffect(() => {
-    const token = localStorage.getItem("token");
-    if (token) {
-        axios.defaults.headers.common["Authorization"] = `Bearer ${token}`;
-    }
+        const token = localStorage.getItem("token");
+        if (token) {
+            axios.defaults.headers.common["Authorization"] = `Bearer ${token}`;
+        }
     }, []);
 
     return (
@@ -33,6 +33,7 @@ function App() {
                 {/* swaps back to main menu */}
                 {playGame && (
                     <button
+                        className="btn btn-light"
                         style={{ position: "absolute", x: 0, y: 0 }}
                         onClick={() => {
                             setMainMenu(true), setPlayGame(false);
@@ -47,8 +48,6 @@ function App() {
                         <Game />
                     </div>
                 )}
-                
-                
             </div>
         </>
     );

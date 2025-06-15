@@ -47,9 +47,10 @@ const LoginModal = (props) => {
             const token = res.data.token;
 
             localStorage.setItem("token", token);
-            axios.defaults.headers.common["Authorization"] = `Bearer ${token}`      //sets all axios requests to send token to verify the user
-
-            props.onClose();
+            axios.defaults.headers.common["Authorization"] = `Bearer ${token}`; //sets all axios requests to send token to verify the user
+            setTimeout(() => {
+                props.onClose();
+            }, 100);
         } catch (err) {
             console.error(err.message);
         }
@@ -94,6 +95,7 @@ const LoginModal = (props) => {
 
                         <button
                             className="btn btn-success"
+                            type="submit"
                             style={{ marginTop: "10px" }}
                         >
                             submit
